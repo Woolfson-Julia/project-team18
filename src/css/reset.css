@@ -28,4 +28,10 @@ img {
 
 button {
   cursor: pointer;
+  font-family: inherit;
+  color: currentColor;
+}
+
+input {
+  font-family: inherit;
 }
