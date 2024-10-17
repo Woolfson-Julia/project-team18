@@ -1,5 +1,5 @@
 body {
-  font-family: "Inter Tight", sans-serif;
+  font-family: 'Inter Tight', sans-serif;
   color: #fbfbfb;
   background: #576f35;
 }
@@ -23,7 +23,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
