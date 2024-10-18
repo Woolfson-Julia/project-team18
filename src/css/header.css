@@ -33,7 +33,6 @@
 @media screen and (min-width: 768px) {
     .section-header {
         top: 32px;
-        /* padding-top: 32px; */
     } 
     .header-logo-icon {
         width: 194px;
@@ -59,9 +58,6 @@
     .header-nav-list {
         display: flex;
         gap: 8px;
-    }
-    .header-nav-item {
-    
     }
     .header-nav-link {
         font-size: 16px;
