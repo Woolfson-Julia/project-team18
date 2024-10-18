@@ -1,0 +1,71 @@
+.veggies-section {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  background-color: #7a3145;
+}
+.veggies-section-title {
+  color: #fbfbfb;
+  font-family: 'Inter Tight';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+.veggies-span-accent {
+  color: rgba(251, 251, 251, 0.3);
+}
+.veggies-section-text {
+  color: #fbfbfb;
+  font-family: 'Inter Tight';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+.veggies-section-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.veggies-section-card {
+  max-width: 334px;
+  max-height: 379px;
+  border-radius: 40px;
+  padding: 32px 26px;
+  background-color: #ffffff;
+}
+.veggies-section-card-title {
+  color: #7a3145;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+}
+.veggies-section-card-text {
+  color: #141414;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+.veggies-section-card-image {
+  width: 282px;
+  height: 243px;
+}
+
+@media screen and (min-width: 768px) {
+  .veggies-section {
+    max-width: 768px;
+  }
+  .veggies-section-list {
+    flex-direction: row;
+    row-gap: 28px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+  }
+}
