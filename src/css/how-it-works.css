@@ -1,0 +1,219 @@
+/*=============== How it works mobile==============*/
+.section {
+  padding-top: 40px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.how-this-works-section {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(122, 49, 69, 1) 0%,
+    rgba(122, 49, 69, 1) 45%,
+    rgba(87, 111, 53, 1) 45%,
+    rgba(87, 111, 53, 1) 100%
+  );
+  height: 181vh;
+}
+
+.how-this-works-section-picture {
+  background-color: rgba(122, 49, 69, 1);
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 40px;
+}
+.how-this-section-info {
+  background-color: rgba(87, 111, 53, 1);
+}
+.how-this-works-section-photo {
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 30px;
+  box-sizing: content-box;
+}
+.how-this-works-section-title {
+  padding-top: 80px;
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Inter Tight;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  color: rgba(251, 251, 251, 1);
+}
+.section-how-this-works-span {
+  font-family: Inter Tight;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  color: rgba(251, 251, 251, 0.3);
+}
+.how-this-works-info {
+  font-family: Inter Tight;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  color: rgba(251, 251, 251, 1);
+  max-width: 335px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.order-features-list-item {
+  font-family: Inter Tight;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: rgba(20, 20, 20, 0.6);
+  background-color: rgba(251, 251, 251, 1);
+  border-radius: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 100px;
+
+  max-width: 335px;
+  min-height: 76px;
+}
+.order-features-list-item:first-child {
+  padding-top: 17px;
+}
+.order-features-list-item:nth-child(2) {
+  padding-top: 24px;
+}
+.order-features-list-item:last-child {
+  padding-top: 24px;
+}
+
+.shopping-features-list-span {
+  font-family: Inter Tight;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: rgba(20, 20, 20, 1);
+}
+
+.shopping-list-counter {
+  counter-set: shopping-list-counter;
+}
+.order-features-list-item::before {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  content: counter(shopping-list-counter);
+  display: inline-block;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 24px;
+  border-color: rgba(122, 49, 69, 0.3);
+  border-width: 5px;
+  border-style: solid;
+  outline: 5px solid rgba(122, 49, 69, 0.3);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgba(122, 49, 69, 1);
+  margin-right: 24px;
+  font-family: Inter Tight;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(251, 251, 251, 1);
+}
+.order-features-list-item {
+  counter-increment: shopping-list-counter;
+}
+/*=============== /How it works mobile==============*/
+/*=============== How it works tablet==============*/
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 100px;
+  }
+  .how-this-works-section-picture {
+    padding-bottom: 100px;
+    box-sizing: content-box;
+  }
+  .how-this-works-section {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(122, 49, 69, 1) 0%,
+      rgba(122, 49, 69, 1) 50%,
+      rgba(87, 111, 53, 1) 50%,
+      rgba(87, 111, 53, 1) 100%
+    );
+    height: 258.2vh;
+  }
+  .how-this-works-section-title {
+    padding-top: 100px;
+    max-width: 450px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .section-how-this-works-span {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .how-this-works-info {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 450px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+  .order-features-list-item {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    max-width: 450px;
+  }
+  .order-features-list-item:first-child {
+    padding-top: 18px;
+  }
+  .order-features-list-item:nth-child(2) {
+    padding-top: 28px;
+  }
+  .order-features-list-item:last-child {
+    padding-top: 18px;
+  }
+  .shopping-features-list-span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+/*=============== /How it works tablet==============*/
+/*=============== How it works desktop==============*/
+@media screen and (min-width: 1280px) {
+  .how-it-works-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .how-this-works-section {
+    background-image: linear-gradient(
+      to right,
+      rgba(122, 49, 69, 1) 0%,
+      rgba(122, 49, 69, 1) 48%,
+      rgba(87, 111, 53, 1) 48%,
+      rgba(87, 111, 53, 1) 100%
+    );
+    height: 120vh;
+  }
+  .how-this-works-section-title {
+    padding-top: 0px;
+  }
+}
+/*=============== /How it works desktop==============*/
