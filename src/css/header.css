@@ -1,9 +1,9 @@
 /*=================== Header Mobil =========================*/
 .section-header {
-    position: sticky;
-    top: 20px;
+    position: absolute;
+    width: 100%;
     z-index: 99;
-    padding-top: 0;
+    padding-top: 20px;
     padding-bottom: 0;
     background-color: transparent;
 }
@@ -19,20 +19,20 @@
 .header-nav-list {
     display: none;
 }
-.header-btn {
+.header-btn-icon {
     background-color: transparent;
     border: none;
     line-height: 0;
     padding: 0;
 }
-.header-btn-text {
+.header-btn {
     display: none;
 }
 /*===================== Header Mobil ==========================*/
 /*=================== Header Media 768 =======================*/
 @media screen and (min-width: 768px) {
     .section-header {
-        top: 32px;
+        padding-top: 32px;
     } 
     .header-logo-icon {
         width: 194px;
@@ -62,7 +62,7 @@
     .header-nav-link {
         font-size: 16px;
         font-weight: 500;
-        line-height: 1.2;
+        line-height: 1.25;
         letter-spacing: -0.02em;
         text-align: center;
         background-color: transparent;
@@ -79,6 +79,7 @@
         background-color: rgba(122, 49, 69, 0.3);
     }  
     .header-btn {
+        display: flex;
         font-weight: 600;
         line-height: 1.11;
         letter-spacing: -0.015em;
@@ -91,6 +92,7 @@
         padding: 16px 32px;
         cursor: pointer;
         text-transform: uppercase;
+        border: none;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .header-btn:active {
