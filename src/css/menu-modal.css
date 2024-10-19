@@ -1,0 +1,126 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.40);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+}
+.backdrop.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: inherit;
+}
+
+.container-menu-modal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #7A3145;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.close-btn-menu-modal {
+    background-color: transparent;
+    border: none;
+}
+
+.svg-icon-menu-modal {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.item-menu-modal {
+    border-radius: 12px;
+    border: 1px solid #FBFBFB66;
+    padding: 12px;
+    width: 115px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.item-menu-modal:not(:last-child) {
+    margin-bottom: 8px;
+}
+.item-menu-modal:hover,
+.item-menu-modal:focus {
+background-color: #fbfbfb;
+color: #7A3145;
+}
+
+.link-menu-modal {
+    font-family: 'Inter Tight';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    display: flex;
+    justify-content: center;
+
+}
+
+.show-btn-modal-menu {
+    border-radius: 30px;
+    border: 1px solid #FBFBFB66;
+    padding: 16px;
+    width: 155px;
+    background-color: #7A3145;
+    color: #fbfbfb;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    font-size: 14px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.show-btn-modal-menu:hover,
+.show-btn-modal-menu:focus {
+    color: #7A3145;
+    background-color: #fbfbfb;
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .container-menu-modal {
+        width: 351px;
+        right: 0;
+    }
+
+    .svg-icon-menu-modal {
+        right: 32px;
+        top: 32px;
+    }
+
+    .item-menu-modal {
+        width: 123px;
+    }
+
+    .show-btn-modal-menu {
+        font-size: 18px;
+        width: 157px;
+        margin-bottom: 50px;
+
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    .container-menu-modal {
+        display: none;
+    }
+}
