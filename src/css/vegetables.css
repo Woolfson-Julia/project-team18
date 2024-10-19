@@ -79,15 +79,46 @@
   .veggies-section {
     max-width: 768px;
   }
+  .veggies-section-container.container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .veggies-section-content-wrapper {
+    max-width: 626px;
+    margin-bottom: 50px;
+    row-gap: 50px;
+  }
+  .veggies-section-title {
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -0.01em;
+  }
+  .veggies-section-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
   .veggies-section-list {
     flex-direction: row;
     row-gap: 28px;
     column-gap: 20px;
     flex-wrap: wrap;
   }
+  .veggies-section-card-title {
+    font-size: 32px;
+    line-height: 1;
+  }
 }
 @media screen and (min-width: 1280px) {
   .veggies-section {
     max-width: 1280px;
+  }
+  .veggies-section-container.container {
+    max-width: 1280px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .veggies-section-content-wrapper {
+    row-gap: 25px;
   }
 }
