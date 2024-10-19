@@ -109,6 +109,8 @@
   height: 91px;
   padding: 14px 16px;
   border-radius: 15px;
+
+  resize: none;
 }
 
 .order-form-submit {
@@ -131,7 +133,7 @@
 
 .order-form-submit:hover,
 .order-form-submit:focus {
-  background-color: #49602d;
+  background-color: #7A3145;
 }
 
 .order-social-wrapper {
@@ -173,6 +175,12 @@
   font-weight: 600;
   line-height: 1.08;
   letter-spacing: -0.015em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-social-link:hover {
+  color: rgba(251, 251, 251, 0.50);
 }
 /* -----/SECTION CARDS----- */
 
