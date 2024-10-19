@@ -1,8 +1,20 @@
 .veggies-section {
-  min-width: 320px;
+  width: 100%;
   max-width: 375px;
+  min-width: 320px;
   margin: 0 auto;
   background-color: #7a3145;
+}
+.veggies-section-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.veggies-section-content-wrapper {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 20px;
 }
 .veggies-section-title {
   color: #fbfbfb;
@@ -32,6 +44,7 @@
   align-items: center;
 }
 .veggies-section-card {
+  width: 100%;
   max-width: 334px;
   max-height: 379px;
   border-radius: 40px;
@@ -39,6 +52,7 @@
   background-color: #ffffff;
 }
 .veggies-section-card-title {
+  margin-bottom: 12px;
   color: #7a3145;
   font-weight: 600;
   font-size: 28px;
@@ -46,6 +60,7 @@
   letter-spacing: -0.01em;
 }
 .veggies-section-card-text {
+  margin-bottom: 14px;
   color: #141414;
   font-weight: 600;
   font-size: 14px;
@@ -54,8 +69,10 @@
   text-transform: uppercase;
 }
 .veggies-section-card-image {
-  width: 282px;
-  height: 243px;
+  /* width: 282px; */
+  /* height: 243px; */
+  max-width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -67,5 +84,10 @@
     row-gap: 28px;
     column-gap: 20px;
     flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .veggies-section {
+    max-width: 1280px;
   }
 }
