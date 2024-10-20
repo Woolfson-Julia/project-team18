@@ -89,7 +89,7 @@
     line-height: 1;
   }
   .veggies-section-card {
-    max-width: calc((100%-20px) / 2);
+    max-width: calc((724px - 20px) / 2);
     padding: 32px 30px;
   }
   .veggies-section-card-text {
@@ -104,7 +104,7 @@
     column-gap: 21px;
   }
   .veggies-section-card {
-    max-width: calc((100%-21px * 2) / 3);
+    max-width: calc((1080px - 42px) / 3);
     padding: 32px 32px;
   }
 }
