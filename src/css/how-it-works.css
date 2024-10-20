@@ -36,15 +36,16 @@
 .how-this-works-info {
   font-size: 14px;
   font-weight: 500;
-  line-height: 1, 29;
+  line-height: 1.29;
   max-width: 335px;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .order-features-list-item:not(last-child) {
   margin-bottom: 20px;
 }
 .order-features-list-item {
+  display: flex;
+  align-items: center;
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;
@@ -58,22 +59,15 @@
   min-height: 76px;
 }
 .order-features-list-item:first-child {
-  padding-top: 17px;
   padding-right: 27px;
 }
 .order-features-list-item:nth-child(2) {
-  padding-top: 24px;
   padding-right: 59px;
 }
 .order-features-list-item:last-child {
-  padding-top: 24px;
   padding-right: 24px;
 }
-.order-features-list {
-  display: flex;
-  flex-direction: column;
-  column-gap: 20px;
-}
+
 .shopping-list-features-wrapper {
   align-items: center;
 }
@@ -111,7 +105,6 @@
 /*=============== How it works tablet==============*/
 @media screen and (min-width: 768px) {
   .how-this-works-section-picture {
-    padding-bottom: 100px;
     max-width: 640px;
   }
   .how-this-section-info {
@@ -168,9 +161,11 @@
   }
   .how-this-works-section-picture {
     padding-bottom: 0;
+    margin: 0;
   }
   .how-this-section-info {
     padding-top: 0;
+    margin: 0;
   }
   .how-this-works-section {
     background-image: linear-gradient(
