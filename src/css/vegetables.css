@@ -1,13 +1,5 @@
 .veggies-section {
-  width: 100%;
-  max-width: 375px;
-  min-width: 320px;
-  margin: 0 auto;
   background-color: #7a3145;
-}
-.veggies-section-container {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 .veggies-section-content-wrapper {
   margin-bottom: 40px;
@@ -17,24 +9,19 @@
   row-gap: 20px;
 }
 .veggies-section-title {
-  color: #fbfbfb;
-  font-family: 'Inter Tight';
   font-size: 48px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 50px;
+  line-height: 1.04;
+  letter-spacing: -0.01em;
   text-transform: uppercase;
 }
 .veggies-span-accent {
   color: rgba(251, 251, 251, 0.3);
 }
 .veggies-section-text {
-  color: #fbfbfb;
-  font-family: 'Inter Tight';
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 1.29;
 }
 .veggies-section-list {
   display: flex;
@@ -44,9 +31,6 @@
   align-items: center;
 }
 .veggies-section-card {
-  width: 100%;
-  max-width: 334px;
-  max-height: 379px;
   border-radius: 40px;
   padding: 32px 26px;
   background-color: #ffffff;
@@ -56,7 +40,7 @@
   color: #7a3145;
   font-weight: 600;
   font-size: 28px;
-  line-height: 28px;
+  line-height: 1;
   letter-spacing: -0.01em;
 }
 .veggies-section-card-text {
@@ -64,25 +48,18 @@
   color: #141414;
   font-weight: 600;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.29;
   letter-spacing: -0.01em;
   text-transform: uppercase;
 }
 .veggies-section-card-image {
-  /* width: 282px; */
-  /* height: 243px; */
   max-width: 100%;
   height: auto;
 }
 
 @media screen and (min-width: 768px) {
   .veggies-section {
-    max-width: 768px;
-  }
-  .veggies-section-container.container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+    margin: 0 auto;
   }
   .veggies-section-content-wrapper {
     max-width: 626px;
@@ -91,34 +68,42 @@
   }
   .veggies-section-title {
     font-size: 64px;
-    line-height: 64px;
+    line-height: 1;
     letter-spacing: -0.01em;
   }
   .veggies-section-text {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
   }
   .veggies-section-list {
     flex-direction: row;
     row-gap: 28px;
     column-gap: 20px;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
   .veggies-section-card-title {
     font-size: 32px;
     line-height: 1;
   }
+  .veggies-section-card {
+    max-width: calc((100%-20px) / 2);
+    padding: 32px 30px;
+  }
+  .veggies-section-card-text {
+    margin-bottom: 10px;
+  }
 }
 @media screen and (min-width: 1280px) {
-  .veggies-section {
-    max-width: 1280px;
-  }
-  .veggies-section-container.container {
-    max-width: 1280px;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
   .veggies-section-content-wrapper {
     row-gap: 25px;
+  }
+  .veggies-section-list {
+    column-gap: 21px;
+  }
+  .veggies-section-card {
+    max-width: calc((100%-21px * 2) / 3);
+    padding: 32px 32px;
   }
 }
