@@ -100,9 +100,13 @@ color: #7A3145;
 @media screen and (min-width: 768px) {
     .container-menu-modal {
         width: 351px;
-        right: 0;
+        right: -351px;
+        transition: right 0.3s ease;
     }
 
+.container-menu-modal.active {
+    right: 0;
+}
     .svg-icon-menu-modal {
         right: 32px;
         top: 32px;
