@@ -53,6 +53,7 @@
   text-transform: uppercase;
 }
 .veggies-section-card-image {
+  /* for the rubber effect on the image in the range from 320px to 375px */
   max-width: 100%;
   height: auto;
 }
