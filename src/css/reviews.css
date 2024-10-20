@@ -1,0 +1,114 @@
+/* ================ REVIEWS STYLES ================ */
+.reviews-section-mobile {
+  background-color: #fbfbfb;
+}
+.reviews-title-mobile {
+  margin-bottom: 20px;
+  max-width: 335px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.04;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
+}
+
+.reviews-text-mobile {
+  max-width: 335px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  color: #141414;
+}
+
+.reviews-list-mobile {
+  display: flex;
+}
+
+.reviews-list-item-mobile {
+  position: relative;
+  padding: 20px 16px;
+  border: 1px solid rgba(122, 49, 69, 0.3);
+  border-radius: 24px;
+}
+
+.reviews-list-item-mobile:nth-child(n + 2) {
+  display: none;
+}
+
+.reviews-list-avatar-mobile {
+  margin: auto;
+  margin-bottom: 24px;
+  }
+
+.reviews-list-fullname-mobile {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #040306;
+}
+
+.reviews-list-text-mobile {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(4, 3, 6, 0.4);
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.reviews-accent-color {
+  color: #576f35;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-title-mobile {
+    line-height: 1;
+    margin-bottom: 25px;
+    max-width: 553px;
+    font-size: 64px;
+  }
+  .reviews-text-mobile {
+    max-width: 553px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .reviews-list-mobile {
+    column-gap: 18px;
+  }
+  .reviews-list-item-mobile {
+    line-height: 1.4;
+    width: calc((704px - 18px) / 2);
+    padding: 20px;
+  }
+
+  .reviews-list-item-mobile:nth-child(-n + 2) {
+    display: block;
+  }
+
+  .reviews-list-fullname-mobile {
+    font-size: 18px;
+  }
+  .reviews-list-text-mobile {
+    font-size: 16px;
+    color: rgba(20, 20, 20, 0.4);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews-list-item-mobile {
+    width: calc((1080px - 50px) / 3);
+  }
+
+  .reviews-list-item-mobile:nth-child(n) {
+    display: block;
+  }
+}
+/* ================ /REVIEWS STYLES ================ */
