@@ -52,12 +52,6 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
 }
-.veggies-section-card-image {
-  /* for the rubber effect on the image in the range from 320px to 375px */
-  max-width: 100%;
-  height: auto;
-}
-
 @media screen and (min-width: 768px) {
   .veggies-section {
     margin: 0 auto;
