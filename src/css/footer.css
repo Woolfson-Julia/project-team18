@@ -1,0 +1,285 @@
+/* Styles for Mobile devices */
+.container {
+    min-width: 320px;
+    max-width: 375px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 734px;
+    }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+    .container {
+        max-width: 1110px;
+    }
+}
+
+
+.footer-content {
+    margin-top: 40px;
+    margin-left: 20;
+    margin-right: 59px;
+    margin-bottom: auto;
+
+}
+
+.logo-footer-text {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    color: #fbfbfb;
+
+}
+
+.logo-icon {
+    margin-bottom: 16px;
+}
+
+.logo-footer {
+    margin-bottom: 40px;
+
+}
+
+.menu-list {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: #fbfbfb;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 40px;
+}
+
+.contacts-footer {
+    max-width: auto;
+}
+
+.contacts-list {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.01em;
+    color: #fbfbfb;
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 80px;
+}
+
+.privacy-policy-list {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 133%;
+    letter-spacing: -0.01em;
+    color: rgba(251, 251, 251, 0.5);
+}
+
+.privacy-policy {
+    display: flex;
+
+}
+
+.privacy-policy-list {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.anno {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: -0.01em;
+    color: rgba(251, 251, 251, 0.5);
+    display: inline;
+    margin-left: 49px;
+
+}
+
+/*tablet-footer*/
+@media only screen and (min-width: 768px) {
+
+
+    .footer-content {
+
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        margin-top: 32px;
+
+        margin-left: 32px;
+        margin-right: 32px;
+
+
+
+    }
+
+    .logo-footer {
+        box-sizing: border-box;
+        width: 265px;
+        height: 103px;
+        margin-right: auto;
+        text-align: left;
+
+
+
+    }
+
+    .logo-footer-text {
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 125%;
+        color: #fbfbfb;
+    }
+
+    .menu-item footer {
+        font-size: 32px;
+
+    }
+
+    .center-block {
+
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        margin-left: 224px;
+        text-align: left;
+
+    }
+
+    .contacts-footer-item {
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 111%;
+        letter-spacing: -0.01em;
+        color: #fbfbfb;
+    }
+
+    .privacy-policy {
+        margin-bottom: 32px;
+    }
+
+    .privacy-policy-item {
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 111%;
+        letter-spacing: -0.01em;
+        color: rgba(251, 251, 251, 0.5);
+    }
+
+    .anno {
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 111%;
+        letter-spacing: -0.01em;
+        color: rgba(251, 251, 251, 0.5);
+        margin-left: 284px;
+    }
+
+    .privacy-policy {
+        margin-left: 32px;
+        margin-bottom: 32px;
+
+    }
+
+    /*desktop-footer*/
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 100px;
+
+    }
+
+    .logo-footer-text {
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 125%;
+        color: #fbfbfb;
+    }
+
+    .center-block {
+        display: flex;
+        flex-direction: row;
+        flex-basis: auto;
+    }
+
+    .menu-item-footer {
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: -0.01em;
+        color: #fbfbfb;
+    }
+
+    .contacts-footer {
+        box-sizing: border-box;
+        max-width: 215px;
+        max-height: 85px;
+        margin-left: 121px;
+
+    }
+
+    .contacts-footer-item {
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 111%;
+        letter-spacing: -0.01em;
+        color: #fbfbfb;
+    }
+
+    .privacy-policy-item {
+
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 111%;
+        letter-spacing: -0.01em;
+        color: rgba(251, 251, 251, 0.5);
+    }
+
+    .anno {
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 111%;
+        letter-spacing: -0.01em;
+        color: rgba(251, 251, 251, 0.5);
+        margin-left: 660px;
+    }
+}
