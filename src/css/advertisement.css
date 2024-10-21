@@ -1,72 +1,57 @@
-.advertisement {
-    padding: 80px 10px;
-    border: 1px solid #000;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    background: #fbfbfb;
-    
-}
-
-.advertisement-container {
-    width: 335px;
-    height: 306px;
-    padding: 0;
-    
+.advertisement-section {
+    background-color: #fbfbfb;
 }
 
 .advertisement-text {
-    font-family: "Inter Tight", sans-serif;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 1.04;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #fbfbfb;
-    border-radius: 12px;
-    width: 355px;
-    height: 102px;
-    background: #576f35;
-    padding: 0 10px;
-    
+color: #141414;
+font-weight: 600;
+font-size: 48px;
+line-height: 1.04;
+letter-spacing: -0.01em;
+text-transform: uppercase;
 }
 
-.advertisement-text-color {
-    font-family: "Inter Tight", sans-serif;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 1.04;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #141414;
-   
-    
+.advertisement-text-discount {
+display: inline-block;
+border-radius: 12px;
+width: 355px;
+height: 102px;
+background-color: #576f35;
+margin-left: -10px;
+padding-left: 10px;
+padding-top: 3px;
+color: #fbfbfb;
 }
 
-@media screen and (min-width: 768px){
 
-    .advertisement{
-    
-    }
-
-    .advertisement-container{
-       
-    }
-
-    .advertisement-text{
-        
-    }
-
-    .advertisement-text-color{
-
-    }
-
+@media screen and (min-width: 768px) {
+.advertisement-text {
+font-size: 64px;
+line-height: 1.09; 
+padding-left: 16px; 
+}
+.advertisement-text-discount {
+width: 736px;
+height: 86px;
+margin-left: -16px;
+padding-left: 16px;
+padding-top: 10px;
+}
 }
 
-@media screen and (min-width: 1158px){
-.advertisement {}
-
-.advertisement-container {}
-
-.advertisement-text {}
-
-.advertisement-text-color {}
+@media screen and (min-width: 1280px) {
+.advertisement-text {
+font-size: 76px;
+line-height: 1.5; 
+padding-left: 13px; 
+padding-right: 13px;
+}
+.advertisement-text-discount {
+display: inline;
+width: 808px;
+height: 86px;
+margin-left: -13px;
+padding-left: 13px;
+padding-top: 0;
+}
 }

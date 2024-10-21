@@ -1,0 +1,178 @@
+/*=============== How it works mobile==============*/
+.how-this-works-section {
+  padding-top: 40px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(122, 49, 69, 1) 0%,
+    rgba(122, 49, 69, 1) 530px,
+    rgba(87, 111, 53, 1) 530px,
+    rgba(87, 111, 53, 1) 100%
+  );
+}
+.how-this-section-info {
+  padding-top: 80px;
+  margin: 0 auto;
+}
+.how-this-works-section-picture {
+  max-width: 335px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.how-this-works-section-photo {
+  width: 100%;
+  border-radius: 30px;
+}
+.how-this-works-section-title {
+  margin-bottom: 20px;
+  max-width: 335px;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.015em;
+}
+.section-how-this-works-span {
+  color: rgba(251, 251, 251, 0.3);
+}
+.how-this-works-info {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  max-width: 335px;
+  margin-bottom: 40px;
+}
+.order-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.order-features-list-item {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: rgba(20, 20, 20, 0.6);
+  background-color: rgba(251, 251, 251, 1);
+  border-radius: 15px;
+  position: relative;
+  padding-left: 100px;
+  max-width: 335px;
+  min-height: 76px;
+}
+.order-features-list-item:first-child {
+  padding-right: 27px;
+}
+.order-features-list-item:nth-child(2) {
+  padding-right: 59px;
+}
+.order-features-list-item:last-child {
+  padding-right: 24px;
+}
+
+.shopping-features-list-span {
+  font-weight: 700;
+  color: rgba(20, 20, 20, 1);
+}
+
+.shopping-list-counter {
+  counter-set: shopping-list-counter;
+}
+.order-features-list-item::before {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+  content: counter(shopping-list-counter);
+  display: inline-block;
+  outline: 5px solid rgba(122, 49, 69, 0.3);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgba(122, 49, 69, 1);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(251, 251, 251, 1);
+}
+.order-features-list-item {
+  counter-increment: shopping-list-counter;
+}
+/*=============== /How it works mobile==============*/
+/*=============== How it works tablet==============*/
+@media screen and (min-width: 768px) {
+  .how-this-works-section-picture {
+    padding-bottom: 100px;
+    max-width: 640px;
+  }
+  .how-this-section-info {
+    max-width: 450px;
+    padding-top: 100px;
+  }
+  .how-this-works-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(122, 49, 69, 1) 0%,
+      rgba(122, 49, 69, 1) 840px,
+      rgba(87, 111, 53, 1) 840px,
+      rgba(87, 111, 53, 1) 100%
+    );
+  }
+  .how-this-works-section-title {
+    max-width: 450px;
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 25px;
+  }
+  .how-this-works-info {
+    font-size: 16px;
+    line-height: 1.25;
+    max-width: 450px;
+    margin-bottom: 50px;
+  }
+  .order-features-list-item {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 450px;
+  }
+  .order-features-list-item:first-child {
+    padding-right: 25px;
+  }
+  .order-features-list-item:nth-child(2) {
+    padding-right: 27px;
+  }
+  .order-features-list-item:last-child {
+    padding-right: 27px;
+  }
+}
+/*=============== /How it works tablet==============*/
+/*=============== How it works desktop==============*/
+@media screen and (min-width: 1280px) {
+  .how-it-works-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .how-this-works-section-picture {
+    max-width: 430px;
+    padding-bottom: 0;
+    margin: 0;
+  }
+  .how-this-section-info {
+    padding-top: 0;
+    margin: 0;
+  }
+  .how-this-works-section {
+    background-image: linear-gradient(
+      to right,
+      rgba(122, 49, 69, 1) 0%,
+      rgba(122, 49, 69, 1) 50%,
+      rgba(87, 111, 53, 1) 50%,
+      rgba(87, 111, 53, 1) 100%
+    );
+  }
+}
