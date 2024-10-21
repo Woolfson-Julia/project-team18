@@ -20,27 +20,27 @@
   color: #fff;
 }
 .hero-text {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.29;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.29;
 }
-@media screen and (max-width: 767px) {
-  .hero-background {
-    /* display: flex;
-justify-content: center;
-align-items: center; */
-    background-image: url('/img/Hero/hero-mobile@1x.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-width: 375px;
-    height: 370px;
-  }
+.hero-background {
+background-image: url('/img/hero/hero-mobile@1x.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+width: 100%;
+height: 370px;
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+.hero-background {
+max-width: 375px;
+}
 }
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .hero-background {
     background-image: url('/img/Hero/hero-mobile@2x.jpg');
-  }
+}
 }
 @media only screen and (min-width: 768px) {
   .section-hero {
