@@ -14,7 +14,7 @@ text-transform: uppercase;
 .advertisement-text-discount {
 display: inline-block;
 border-radius: 12px;
-width: 355px;
+max-width: 355px;
 height: 102px;
 background-color: #576f35;
 margin-left: -10px;
