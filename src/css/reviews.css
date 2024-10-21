@@ -28,6 +28,8 @@
 }
 .reviews-list-mobile {
   display: flex;
+  gap: 18px
+  ;
 }
 
 .reviews-list-item-mobile {
