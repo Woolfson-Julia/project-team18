@@ -1,212 +1,177 @@
 /* Styles for Mobile devices */
-.container {
-    min-width: 320px;
-    max-width: 375px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-
+.footer {
+  padding: 40px 0;
+  background-color: #7a3145;
 }
-
-/* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
-    .container {
-        max-width: 734px;
-    }
-}
-
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1280px) {
-    .container {
-        max-width: 1110px;
-    }
-}
-
 
 .footer-content {
-    margin-top: 40px;
-    margin-left: 20;
-    margin-right: 59px;
-    margin-bottom: auto;
-
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 80px;
 }
 
 .logo-footer-text {
-    font-family: "Inter Tight", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 129%;
-    color: #fbfbfb;
-
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
 }
-
-.logo-icon {
-    margin-bottom: 16px;
+.logo-footer-link {
+  display: inline-block;
+  margin-bottom: 14px;
 }
 
 .logo-footer {
-    margin-bottom: 40px;
-
+  max-width: 295px;
 }
-
+.center-block {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 .menu-list {
-    font-family: "Inter Tight", sans-serif;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 100%;
-    letter-spacing: -0.01em;
-    color: #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.menu-link-footer {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.015em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-link-footer:hover,
+.menu-link-footer:focus {
+  color: rgba(251, 251, 251, 0.3);
 }
 
-.menu-list {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    margin-bottom: 40px;
+.contacts-footer-item {
+  max-width: 179px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.29;
+  letter-spacing: -0.015em;
 }
-
-.contacts-footer {
-    max-width: auto;
+.phone {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.phone:hover,
+.phone:focus {
+  color: rgba(251, 251, 251, 0.3);
 }
 
 .contacts-list {
-    font-family: "Inter Tight", sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 129%;
-    letter-spacing: -0.01em;
-    color: #fbfbfb;
-}
-
-.contacts-list {
     display: flex;
     flex-direction: column;
     gap: 14px;
-    margin-bottom: 80px;
 }
 
-.privacy-policy-list {
-    font-family: "Inter Tight", sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 133%;
-    letter-spacing: -0.01em;
-    color: rgba(251, 251, 251, 0.5);
+.privacy-policy-link {
+  color: rgba(251, 251, 251, 0.5);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: -0.015em;
 }
-
+.privacy-policy-link:hover,
+.privacy-policy-link:focus {
+  text-decoration: underline;
+}
+.privacy-policy-item:not(:last-child):after {
+  content: '/';
+  color: rgba(251, 251, 251, 0.5);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: -0.015em;
+  margin: 0 8px;
+}
 .privacy-policy {
-    display: flex;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .privacy-policy-list {
     display: flex;
-    flex-direction: row;
-    gap: 8px;
 }
 
 .anno {
-    font-family: "Inter Tight", sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 117%;
-    letter-spacing: -0.01em;
-    color: rgba(251, 251, 251, 0.5);
-    display: inline;
-    margin-left: 49px;
+  color: rgba(251, 251, 251, 0.5);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: -0.015em;
 
 }
 
 /*tablet-footer*/
 @media only screen and (min-width: 768px) {
-
+    .footer {
+      padding: 32px 0;
+    }
 
     .footer-content {
-
-        display: flex;
-        flex-direction: row;
-        box-sizing: border-box;
-        margin-top: 32px;
-
-        margin-left: 32px;
-        margin-right: 32px;
-
-
-
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 0;
+      margin-bottom: 100px;
     }
 
     .logo-footer {
-        box-sizing: border-box;
-        width: 265px;
-        height: 103px;
-        margin-right: auto;
-        text-align: left;
+      max-width: 265px;
+    }
 
+    .logo-footer-link {
+      margin-bottom: 25px;
+    }
 
-
+    .logo-icon {
+      width: 194px;
+      height: 18px;
     }
 
     .logo-footer-text {
-        font-family: "Inter Tight", sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 125%;
-        color: #fbfbfb;
-    }
-
-    .menu-item footer {
-        font-size: 32px;
-
+      font-size: 16px;
+      line-height: 1.25;
     }
 
     .center-block {
+      gap: 64px;
+    }
 
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 64px;
-        margin-left: 224px;
-        text-align: left;
+    .menu-list {
+      gap: 25px;
+    }
 
+    .menu-link-footer {
+      font-size: 32px;
+    }
+
+    .contacts-list {
+      gap: 25px;
     }
 
     .contacts-footer-item {
-        font-family: "Inter Tight", sans-serif;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 111%;
-        letter-spacing: -0.01em;
-        color: #fbfbfb;
+      max-width: 215px;
+      font-size: 18px;
+      line-height: 1.11;
+    }
+    .privacy-policy-item:not(:last-child):after {
+      font-size: 18px;
+      line-height: 1.11;
     }
 
-    .privacy-policy {
-        margin-bottom: 32px;
-    }
-
-    .privacy-policy-item {
-        font-family: "Inter Tight", sans-serif;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 111%;
-        letter-spacing: -0.01em;
-        color: rgba(251, 251, 251, 0.5);
+    .privacy-policy-link {
+      font-size: 18px;
+    line-height: 1.11;
     }
 
     .anno {
-        font-family: "Inter Tight", sans-serif;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 111%;
-        letter-spacing: -0.01em;
-        color: rgba(251, 251, 251, 0.5);
-        margin-left: 284px;
-    }
-
-    .privacy-policy {
-        margin-left: 32px;
-        margin-bottom: 32px;
-
+      font-size: 18px;
+      line-height: 1.11;
     }
 
     /*desktop-footer*/
@@ -214,72 +179,16 @@
 }
 
 @media only screen and (min-width: 1280px) {
-
+  .footer {
+    padding: 50px 0;
+  }
 
     .footer-content {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 100px;
-
-    }
-
-    .logo-footer-text {
-        font-family: "Inter Tight", sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 125%;
-        color: #fbfbfb;
+      margin-bottom: 125px;
     }
 
     .center-block {
-        display: flex;
-        flex-direction: row;
-        flex-basis: auto;
-    }
-
-    .menu-item-footer {
-        font-family: "Inter Tight", sans-serif;
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 100%;
-        letter-spacing: -0.01em;
-        color: #fbfbfb;
-    }
-
-    .contacts-footer {
-        box-sizing: border-box;
-        max-width: 215px;
-        max-height: 85px;
-        margin-left: 121px;
-
-    }
-
-    .contacts-footer-item {
-        font-family: "Inter Tight", sans-serif;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 111%;
-        letter-spacing: -0.01em;
-        color: #fbfbfb;
-    }
-
-    .privacy-policy-item {
-
-        font-family: "Inter Tight", sans-serif;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 111%;
-        letter-spacing: -0.01em;
-        color: rgba(251, 251, 251, 0.5);
-    }
-
-    .anno {
-        font-family: "Inter Tight", sans-serif;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 111%;
-        letter-spacing: -0.01em;
-        color: rgba(251, 251, 251, 0.5);
-        margin-left: 660px;
+      flex-direction: row;
+      gap: 121px;
     }
 }
