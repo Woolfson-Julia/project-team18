@@ -2,7 +2,7 @@
 .container {
   min-width: 320px;
   max-width: 375px;
-  padding: 0 20px;
+  padding: 0 14px;
   margin: 0 auto;
 }
 /* Styles for Tablet devices */
