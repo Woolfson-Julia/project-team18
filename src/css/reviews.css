@@ -21,22 +21,38 @@
   line-height: 1.28;
   color: #141414;
 }
-
+.reviews-list-container {
+  scroll-snap-type: x mandatory; 
+  display: flex; 
+  overflow-x: auto; 
+}
 .reviews-list-mobile {
   display: flex;
+  column-gap: 4px;
 }
-
 .reviews-list-item-mobile {
   position: relative;
-  padding: 20px 16px;
   border: 1px solid rgba(122, 49, 69, 0.3);
   border-radius: 24px;
-}
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  }
 
-.reviews-list-item-mobile:nth-child(n + 2) {
-  display: none;
+@media screen and (max-width: 320px) and (min-width: 374px) {
+  .reviews-list-item-mobile {
+  padding-left: 8px;
+  padding-right: 8px;
 }
-
+}
+@media screen and (min-width: 375px) {
+  .reviews-list-item-mobile {
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 335px;
+}
+}
 .reviews-list-avatar-mobile {
   margin: auto;
   margin-bottom: 24px;
