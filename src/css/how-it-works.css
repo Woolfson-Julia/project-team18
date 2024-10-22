@@ -170,8 +170,8 @@
     background-image: linear-gradient(
       to right,
       rgba(122, 49, 69, 1) 0%,
-      rgba(122, 49, 69, 1) 50%,
-      rgba(87, 111, 53, 1) 50%,
+      rgba(122, 49, 69, 1) 49.35%,
+      rgba(87, 111, 53, 1) 49.35%,
       rgba(87, 111, 53, 1) 100%
     );
   }
