@@ -23,12 +23,11 @@
 }
 .reviews-list-container {
   scroll-snap-type: x mandatory; 
-  display: flex; 
   overflow-x: auto; 
 }
 .reviews-list-mobile {
   display: flex;
-  gap: 18px
+  gap: 16px
   ;
 }
 
@@ -37,8 +36,9 @@
   padding: 20px 16px;
   border: 1px solid rgba(122, 49, 69, 0.3);
   border-radius: 24px;
-  min-width: 335px;
+  max-width: 335px;
   scroll-snap-align: start;
+  flex: 0 0 100%;
 }
 .reviews-list-avatar-mobile {
   margin: auto;
