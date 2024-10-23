@@ -52,9 +52,54 @@
   text-transform: uppercase;
 }
 
+/* ===== Flip-card ======= */
+.veggies-section-card-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 20px;
+  color: #141414;
+}
+.veggies-section-card-list-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.29;
+  letter-spacing: -0.01em;
+}
+.veggies-section-card-list-item-accent {
+  font-weight: 600;
+  color: #7a3145;
+}
+.veggies-section-card.flip-card-back .veggies-section-card-title {
+  margin-bottom: 40px;
+}
+.flip-card-inner {
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card {
+  perspective: 1000px;
+}
+.flip-card-front,
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+}
+.flip-card-inner.flipped {
+  transform: rotateY(180deg);
+}
 @media screen and (max-width: 359px) {
   .veggies-section-card {
-  padding: 32px 8px;
+    padding: 32px 8px;
   }
 }
 @media screen and (min-width: 360px) and (max-width: 767px) {
@@ -110,5 +155,8 @@
   .veggies-section-card {
     max-width: calc((1080px - 42px) / 3);
     padding: 32px 32px;
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
   }
 }
