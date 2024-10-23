@@ -4,15 +4,14 @@
 }
 .reviews-title-mobile {
   margin-bottom: 20px;
-  max-width: 335px;
   font-weight: 600;
-  font-size: 48px;
   line-height: 1.04;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #141414;
+  font-size: 48px;
+  max-width: 335px;
 }
-
 .reviews-text-mobile {
   max-width: 335px;
   margin-bottom: 40px;
@@ -21,27 +20,28 @@
   line-height: 1.28;
   color: #141414;
 }
-
+.reviews-list-container {
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+}
 .reviews-list-mobile {
   display: flex;
+  column-gap: 6px;
 }
-
 .reviews-list-item-mobile {
   position: relative;
-  padding: 20px 16px;
   border: 1px solid rgba(122, 49, 69, 0.3);
   border-radius: 24px;
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 335px;
 }
-
-.reviews-list-item-mobile:nth-child(n + 2) {
-  display: none;
-}
-
 .reviews-list-avatar-mobile {
   margin: auto;
   margin-bottom: 24px;
-  }
-
+}
 .reviews-list-fullname-mobile {
   margin-bottom: 8px;
   font-size: 16px;
@@ -51,7 +51,6 @@
   letter-spacing: -0.02em;
   color: #040306;
 }
-
 .reviews-list-text-mobile {
   font-weight: 500;
   font-size: 14px;
@@ -62,11 +61,19 @@
   padding-left: 7px;
   padding-right: 7px;
 }
-
 .reviews-accent-color {
   color: #576f35;
 }
-
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .reviews-list-item-mobile {
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 335px;
+  }
+  .reviews-list-mobile {
+    column-gap: 16px;
+  }
+}
 @media screen and (min-width: 768px) {
   .reviews-title-mobile {
     line-height: 1;
@@ -88,11 +95,9 @@
     width: calc((704px - 18px) / 2);
     padding: 20px;
   }
-
   .reviews-list-item-mobile:nth-child(-n + 2) {
     display: block;
   }
-
   .reviews-list-fullname-mobile {
     font-size: 18px;
   }
@@ -101,12 +106,10 @@
     color: rgba(20, 20, 20, 0.4);
   }
 }
-
 @media screen and (min-width: 1280px) {
   .reviews-list-item-mobile {
     width: calc((1080px - 50px) / 3);
   }
-
   .reviews-list-item-mobile:nth-child(n) {
     display: block;
   }

@@ -32,6 +32,7 @@ padding-left: 16px;
 }
 .advertisement-text-discount {
 width: 736px;
+max-width: 736px;
 height: 86px;
 margin-left: -16px;
 padding-left: 16px;
@@ -42,13 +43,13 @@ padding-top: 10px;
 @media screen and (min-width: 1280px) {
 .advertisement-text {
 font-size: 76px;
-line-height: 1.5; 
+line-height: 1.05; 
 padding-left: 13px; 
 padding-right: 13px;
 }
 .advertisement-text-discount {
-display: inline;
 width: 808px;
+max-width: 808px;
 height: 86px;
 margin-left: -13px;
 padding-left: 13px;
