@@ -36,6 +36,9 @@ height: 370px;
 .hero-background {
 width: 100%;
 }
+.hero-title {
+font-size: 46px;
+}
 }
 @media screen and (min-width: 375px) and (max-width: 767px) {
 .hero-background {
